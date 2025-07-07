@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Corazones Solidarios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #9d4932;
+      --accent-color: #ffffff;
+      --text-dark: #111;
+      --bg-light: #bc9d93;
+      --neutral: #f2e9e7;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: var(--accent-color);
+      padding: 50px 20px;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: var(--main-color);
+    }
+
+    h3 {
+      color: var(--main-color);
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    .qr-section {
+      text-align: center;
+      background: var(--neutral);
+      padding: 40px 20px;
+      border-radius: 12px;
+    }
+
+    .qr-section img {
+      width: 160px;
+      margin: 20px 0;
+    }
+
+    .media video {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-light {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    footer {
+      font-size: 14px;
+      color: #fff;
+      background-color: var(--main-color);
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    footer a {
+      color: #ffe7e0;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      .qr-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Encabezado -->
+    <header>
+      <h1>Juntos Construimos Fe</h1>
+      <p>Tu colaboración es fundamental para hacer realidad este proyecto de fe y comunidad.</p>
+      <p>Ayúdanos a construir un nuevo templo para nuestra iglesia adventista. ¡Gracias por tu generosidad!</p>
+    </header>
+
+    <!-- Sección QR -->
+    <section class="qr-section">
+      <h2>Donaciones vía QR</h2>
+      <p>Escanea el código QR con tu celular para donar de forma segura:</p>
+      <img src="qr.jpg" alt="Código QR">
+      <p><strong>Ubicacion del Lugar</strong></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d8084.175872653576!2d-63.12688745799974!3d-17.76057663276638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-17.7598756!2d-63.119392999999995!4m5!1s0x93f1e61c91c77b67%3A0xc38927b8a897302b!2sPampa%20de%20la%20Isla!3m2!1d-17.7616743!2d-63.122862299999994!5e1!3m2!1ses-419!2sbo!4v1751908259205!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Video -->
+    <section class="media">
+      <h2>Conoce el Proyecto</h2>
+      <video src="videoDemostracion2.mp4" autoplay loop controls></video>
+
+    <!-- Quiénes somos -->
+    <section>
+      <h2>¿Quiénes Somos?</h2>
+      <p>Corazones Solidarios es una iniciativa dedicada a recaudar fondos para la construcción de un nuevo templo adventista. Con tu apoyo, construiremos un espacio de paz, fe y comunidad para todos.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-light">
+      <h2>Preguntas Frecuentes</h2>
+      <h3>¿Cuál es el objetivo?</h3>
+      <p>Levantar un nuevo templo para fortalecer nuestra fe y comunidad.</p>
+
+      <h3>¿Cómo puedo ayudar?</h3>
+      <p>Con tu donación, difundiendo este mensaje o siendo voluntario.</p>
+
+      <h3>¿Cuándo estará listo?</h3>
+      <p>Dependerá del apoyo recibido, pero trabajamos día a día para lograrlo.</p>
+
+      <h3>¿Quiénes usarán el templo?</h3>
+      <p>Estará abierto a toda la comunidad que desee compartir en fe y unidad.</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p><strong>Iglesia Arenales</strong> · Santa Cruz, Bolivia</p>
+      <p>Email: info@csolid.com · Tel: +52-123-456-7890</p>
+      <p><a href="#">Política de privacidad</a> · <a href="#">Términos</a></p>
+      <p>&copy; 2025 Corazones Solidarios</p>
+    </footer>
+  </div>
+</body>
+</html>
