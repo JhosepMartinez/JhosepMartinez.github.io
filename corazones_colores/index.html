@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -80,6 +79,24 @@
       margin: 20px 0;
     }
 
+    .map-responsive {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .map-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     .media video {
       width: 100%;
       border-radius: 10px;
@@ -136,14 +153,17 @@
       <h2>Donaciones vía QR</h2>
       <p>Escanea el código QR con tu celular para donar de forma segura:</p>
       <img src="qr.jpg" alt="Código QR">
-      <p><strong>Ubicacion del Lugar</strong></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d8084.175872653576!2d-63.12688745799974!3d-17.76057663276638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-17.7598756!2d-63.119392999999995!4m5!1s0x93f1e61c91c77b67%3A0xc38927b8a897302b!2sPampa%20de%20la%20Isla!3m2!1d-17.7616743!2d-63.122862299999994!5e1!3m2!1ses-419!2sbo!4v1751908259205!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p><strong>Ubicación del Lugar</strong></p>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d8084.175872653576!2d-63.12688745799974!3d-17.76057663276638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-17.7598756!2d-63.119392999999995!4m5!1s0x93f1e61c91c77b67%3A0xc38927b8a897302b!2sPampa%20de%20la%20Isla!3m2!1d-17.7616743!2d-63.122862299999994!5e1!3m2!1ses-419!2sbo!4v1751908259205!5m2!1ses-419!2sbo" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
     <!-- Video -->
     <section class="media">
       <h2>Conoce el Proyecto</h2>
       <video src="videoDemostracion2.mp4" autoplay loop controls></video>
+    </section>
 
     <!-- Quiénes somos -->
     <section>
